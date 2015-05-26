@@ -6,8 +6,8 @@
 $(document).ready(function(){
     $("p").click(function(){
         addList = "<li>new list item </li>"
-        $('ol il:last-child').after(addList);
-        $('ol il:last-child').bind('click', function(){
+        $('ol li:last-child').after(addList);
+        $('ol li:last-child').bind('click', function(){
          alert('Click is binded');
         })
     });

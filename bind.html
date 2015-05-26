@@ -7,9 +7,11 @@ $(document).ready(function(){
     $("p").click(function(){
         addList = "<tr><td>new list item </td><td>click to open</td></tr>"
         $('table tr:last-child').after(addList);
+        $('table tr:last-child').find('td:last-child').hide();
         $('table tr:last-child').bind('click', function(){
             alert('Click is binded');
-            $(this).find('td:first-child').slideToggle( "slow" );
+            $(this).find('td:first-child').slideToggle( 300 );
+            $('table tr:last-child').find('td:last-child').slideToggle( 500 );
         })
     });
 });

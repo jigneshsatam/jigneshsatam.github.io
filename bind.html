@@ -9,7 +9,7 @@ $(document).ready(function(){
         $('table tr:last-child').after(addList);
         $('table tr:last-child').bind('click', function(){
             alert('Click is binded');
-            // $(this).slideToggle( "slow" );
+            $(this).find('td:first-child').slideToggle( "slow" );
         })
     });
 });

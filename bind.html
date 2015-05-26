@@ -10,7 +10,7 @@ $(document).ready(function(){
         $('table tr:last-child').after(addList);
         $('table tr:last-child').find('td:last-child').hide();
         $('table tr:last-child').bind('click', function(){
-            $(this).find('td:first-child').toggle('slide', 'left', 300);
+            $(this).find('td:first-child').find('td:first-child').toggle('slide', 'left', 300);
             $('table tr:last-child').find('td:last-child').toggle('slide', 'right', 300);
         })
     });

@@ -10,8 +10,8 @@ $(document).ready(function(){
         $('table tr:last-child').find('td:last-child').hide();
         $('table tr:last-child').bind('click', function(){
             alert('Click is binded');
-            $(this).find('td:first-child').slideToggle( 300 );
-            $('table tr:last-child').find('td:last-child').slideToggle( 500 );
+            $(this).find('td:first-child').toggle('slide', 'left', 300);
+            $('table tr:last-child').find('td:last-child').toggle('slide', 'right', 300);
         })
     });
 });

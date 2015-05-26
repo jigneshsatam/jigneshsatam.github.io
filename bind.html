@@ -2,6 +2,7 @@
 <html>
 <head>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script>
 $(document).ready(function(){
     $("p").click(function(){
@@ -9,7 +10,6 @@ $(document).ready(function(){
         $('table tr:last-child').after(addList);
         $('table tr:last-child').find('td:last-child').hide();
         $('table tr:last-child').bind('click', function(){
-            alert('Click is binded');
             $(this).find('td:first-child').toggle('slide', 'left', 300);
             $('table tr:last-child').find('td:last-child').toggle('slide', 'right', 300);
         })

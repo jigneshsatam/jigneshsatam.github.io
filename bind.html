@@ -4,8 +4,12 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-    $("p").bind("click", function(){
-        alert("The paragraph was clicked.");
+    $("p").click(function(){
+        addList = "<td>new list item </td>"
+        $('table td:last-child').after(addList);
+        $('table td:last-child').bind('click', function(){
+         alert('Click is binded');
+        })
     });
 });
 </script>
@@ -13,6 +17,14 @@ $(document).ready(function(){
 <body>
 
 <p>Click me!</p>
-
+<table>
+ </tr>Name</tr>
+ <td>
+    List item  
+ </td>
+ <td>
+  List item
+ </td>
+</table>
 </body>
 </html>

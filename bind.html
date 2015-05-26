@@ -5,9 +5,9 @@
 <script>
 $(document).ready(function(){
     $("p").click(function(){
-        addList = "<td>new list item </td>"
-        $('table tr:last-child').after(addList);
-        $('table tr:last-child').bind('click', function(){
+        addList = "<li>new list item </li>"
+        $('ol il:last-child').after(addList);
+        $('ol il:last-child').bind('click', function(){
          alert('Click is binded');
         })
     });
@@ -15,22 +15,10 @@ $(document).ready(function(){
 </script>
 </head>
 <body>
-
-<p>Click me!</p>
-<table>
-  <th>
-      </td>Name</td>
- </th>
- <tr>
-     <td>
-       List item
-     </td>
- </tr>
- <tr>
-     <td>
-        List item
-     </td>
- </tr>
-</table>
+    <p>Click to add item in list with click binded! :)</p>
+    <ol>
+        <li>Old List item</li>
+        <li>Old List item</li>
+    </ol>
 </body>
 </html>

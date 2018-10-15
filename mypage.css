@@ -1,0 +1,40 @@
+/*Generic*/
+html, body {
+  height: 100%;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.center-flex-content{
+  /*Center content*/
+  justify-content: center;
+  align-items: center;
+}
+.parallax {
+  background-attachment: fixed;
+}
+.font-size-2em{
+  font-size: 2em;
+}
+
+#myHeader.row{
+  height: 15%;
+  border: 1px solid blue;
+  transition: 0.2s;
+}
+
+#myHeader.row.sticky{
+  position: fixed;
+  top: 0;
+}
+
+#myHeader.row.shrink{
+  height: 10%;
+}
+
+.content.row{
+  height: 200%;
+  border: 1px dotted #ccc;
+}

@@ -2,11 +2,11 @@
 <html id="about">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JigneshSatam</title>
-  <link rel="stylesheet" type="text/css" href="./index.css">
-  <link rel="stylesheet" type="text/css" href="./titlepage.css">
-  <link rel="stylesheet" type="text/css" href="./titlepage-mobile.css">
+  <link rel="stylesheet" type="text/css" href="./stylesheets/index.css">
+  <link rel="stylesheet" type="text/css" href="./stylesheets/titlepage.css">
+  <link rel="stylesheet" type="text/css" href="./stylesheets/navbar.css">
 </head>
 <body>
   <div class="bg-img parallax row center-flex-content">
@@ -17,8 +17,11 @@
     </div>
   </div>
   <div id="navbar" class="row">
-    <a href="#about">About</a>
-    <a href="#career">Career</a>
+    <div id="about-div">
+      <a id="about" href="#about">About</a>
+      <a id="open-nav" href="javascript:void(0);" onclick="openNav()">open</a>
+    </div>
+    <a id="career" href="#career">Career</a>
   </div>
   <div class="content row center-flex-content">
     <div>1</div>
@@ -32,15 +35,24 @@
     var header = document.getElementById("navbar");
     var sticky = header.offsetTop;
     function myFunction() {
-      console.log(window.pageYOffset + " -- "+ sticky)
       if (window.pageYOffset > sticky) {
         header.classList.add("sticky");
-        header.classList.add("shrink");
+        // header.classList.add("shrink");
       } else {
         header.classList.remove("sticky");
-        header.classList.remove("shrink");
+        // header.classList.remove("shrink");
       }
     }
     window.onclick = function() {myFunction()};
+    var navbarHidden = true;
+    function openNav(){
+      if (navbarHidden == true) {
+        navbar.classList.add("show");
+        navbarHidden = false;
+      } else {
+        header.classList.remove("show");
+        navbarHidden = true;
+      }
+    }
   </script>
 </html>

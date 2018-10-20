@@ -1,6 +1,5 @@
 #navbar.row{
   height: 10%;
-  border: 1px solid blue;
   transition: 0.2s;
   align-items: center;
   background-color: #000;
@@ -22,14 +21,19 @@
   text-align: center;
   text-decoration-line: none;
 }
+#navbar.row a:hover {
+  background-color: #999;
+}
+#navbar.row.sticky a:hover {
+  background-color: #c6c6c6;
+}
 #open-nav{
   display: none;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 600px), (orientation: landscape) and (max-width: 823px) {
   #navbar.row {
     height: unset;
     align-items: unset;
-    border: unset;
     background-color: inherit;
     color: inherit;
     position: fixed;
@@ -37,6 +41,9 @@
   }
   #navbar a {
     text-align: unset;
+  }
+  #navbar.row a:hover {
+    background-color: #c6c6c6;
   }
   #navbar.row.sticky{
     background-color: inherit;

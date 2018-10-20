@@ -23,7 +23,7 @@ body {
   font-size: 2em;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 600px), (orientation: landscape) and (max-width: 823px) {
   .row {
     flex-direction: column;
   }

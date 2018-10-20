@@ -44,7 +44,7 @@
   color: black;
   background-position: right center; /* change the direction of the change here */
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 600px), (orientation: landscape) and (max-width: 823px) {
   .bg-img {
     height: 100%;
   }

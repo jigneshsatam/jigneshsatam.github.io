@@ -12,40 +12,37 @@
 <body>
   <div class="bg-img parallax row center-flex-content">
     <div class="intro row">
-      <div id="name">I am Jignesh Satam</div>
+      <div id="name">I am <span class="blue">Jignesh Satam</span></div>
       <div id="prof">Full Stack Developer on a mission to tackle complex problems and provide solutions</div>
-      <button id="resume"><i class="fa fa-cloud-download-alt"></i>Résumé</button>
+      <button id="resume"><i class="fa fa-cloud-download-alt blue right-margin-4em"></i>Résumé</button>
     </div>
   </div>
   <div id="navbar" class="row">
     <div id="about-div">
-      <a href="#about" onclick="closeNav()">About</a>
+      <a href="#about" onclick="navbarClick()">About</a>
       <a id="open-nav" href="javascript:void(0);" onclick="toggleNav()"><i class="fa fa-bars"></i></a>
     </div>
-    <a href="#career" onclick="closeNav()">Career</a>
+    <a href="#career" onclick="navbarClick()">Career</a>
   </div>
-  <div class="content row center-flex-content">
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>
-  </div>
+  <div id="fill-navbar"></div>
+  <section id="career" class="content row">
+    <div id="timeline">
+    </div>
+  </section>
 
 </body>
   <script type="text/javascript">
     window.onscroll = function() {myFunction()};
     var header = document.getElementById("navbar");
     var sticky = header.offsetTop;
+    var navbarHidden = true;
     function myFunction() {
       if (window.pageYOffset > sticky) {
         header.classList.add("sticky");
-        // header.classList.add("shrink");
       } else {
         header.classList.remove("sticky");
-        // header.classList.remove("shrink");
       }
     }
-    window.onclick = function() {myFunction()};
-    var navbarHidden = true;
     function toggleNav(){
       if (navbarHidden == true) {
         navbar.classList.add("show");
@@ -57,6 +54,9 @@
     function closeNav(){
       header.classList.remove("show");
       navbarHidden = true;
+    }
+    function navbarClick(){
+      closeNav();
     }
   </script>
 </html>

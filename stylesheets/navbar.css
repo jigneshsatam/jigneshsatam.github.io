@@ -4,11 +4,13 @@
   align-items: center;
   background-color: #000;
   background-color: #c6c6c6;
+  position: absolute;
 }
 #navbar.row.sticky{
   background-color: #999;
   position: fixed;
   top: 0;
+  z-index: 2;
 }
 #navbar.row a {
   color: white;
@@ -22,10 +24,18 @@
   text-decoration-line: none;
 }
 #navbar.row a:hover {
-  background-color: #999;
+  /*background-color: #999;*/
+  color: #4a86e8
 }
 #navbar.row.sticky a:hover {
-  background-color: #c6c6c6;
+  /*background-color: #c6c6c6;*/
+  color: #4a86e8;
+}
+#fill-navbar{
+  /*display: none;*/
+  height: 10%;
+  width: 100%;
+  content: "";
 }
 #open-nav{
   display: none;
@@ -44,10 +54,14 @@
     text-align: unset;
   }
   #navbar.row a:hover {
-    background-color: #c6c6c6;
+    /*background-color: #c6c6c6;*/
+    color: #4a86e8;
   }
   #navbar.row.sticky{
     background-color: inherit;
+  }
+  #fill-navbar{
+    display: none;
   }
   #open-nav{
     display: unset;

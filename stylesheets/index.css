@@ -22,6 +22,18 @@ body {
 .font-size-2em{
   font-size: 2em;
 }
+.blue {
+  color: #4a86e8 !important;
+}
+.right-margin-4em{
+  margin-right: 0.4em;
+}
+section[id]::before{
+  display: block;
+  visibility: hidden;
+  height: 5%;
+  content: "";
+}
 
 /*@media screen and (max-width: 600px), (orientation: landscape) and (max-width: 823px) {*/
 @media screen and (max-width: 767px) {
@@ -33,4 +45,17 @@ body {
 .content.row{
   height: 200%;
   border: 1px dotted #ccc;
+}
+#career.row{
+  flex-direction: column;
+  align-items: center;
+  /*justify-content: center;*/
+}
+#timeline::before{
+  content: '';
+  background: #e7eaec;
+  width: 0.3%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
 }

@@ -10,7 +10,7 @@
   background-color: #999;
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 3;
 }
 #navbar.row a {
   color: white;

@@ -1,45 +1,61 @@
-#career.row{
+/*#career.row{
   flex-direction: column;
   align-items: center;
-}
+}*/
 #timeline::before{
   content: '';
   background: #e7eaec;
   width: 0.3%;
-  height: 230%;
+  height: 250%;
   position: absolute;
   left: 50%;
 }
-#timeline.row{
-  justify-content: center;
+#timeline{
+  padding: 4%;
 }
 .timeline-block{
-  width: 90%;
   margin-top: 3%;
   color: #676a6c;
 }
-.timeline-block.row{
+/*.timeline-block.row{
   justify-content: space-between;
   align-items: center;
-}
-.timeline-block.row:nth-child(2n){
-  flex-direction: row-reverse;
-}
-.timeline-block.row:nth-child(2n) .timeline-designation{
-  text-align: right;
-}
-.timeline-block.row div{
+}*/
+
+.timeline-block .timeline-content{
+  position: relative;
+  background-color: white;
+  border-radius: 0.5em;
   padding: 2%;
   width: 40%;
 }
-.timeline-block.row div:first-child{
-  background-color: white;
-  border-radius: 1em;
-}
-.timeline-block.row p{
+.timeline-block .timeline-content p{
   color: #aeaeae;
 }
-.timeline-block .timeline-icon.row{
+.timeline-block .timeline-content .timeline-designation{
+  position: absolute;
+  top: 2%;
+  width: 100%;
+  left: 126%;
+}
+.timeline-block .timeline-content .timeline-designation small {
+  font-size: 85%;
+  font-weight: 600;
+}
+.timeline-block:nth-child(2n) .timeline-content{
+  float: right;
+}
+.timeline-block:nth-child(2n) .timeline-designation{
+  left: auto;
+  right: 126%;
+  text-align: right;
+}
+/*.timeline-block.row div{
+  background-color: white;
+  border-radius: 1em;
+}*/
+
+/*.timeline-block .timeline-icon.row{
   height: 14%;
   width: 4%;
   padding: unset;
@@ -54,4 +70,42 @@
 }
 .timeline-block .timeline-icon::before i{
   content: "\f0fe";
+}*/
+.timeline-block:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.timeline-block .timeline-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  left: 50%;
+  margin-left: -1.4%;
+  border-radius: 50%;
+  background-color: #999;
+  color: white;
+  font-size: 100%;
+}
+@media screen and (max-width: 767px) {
+  #timeline::before{
+    left: 8.7%;
+  }
+  .timeline-block .timeline-content .timeline-designation{
+    position: unset;
+  }
+  .timeline-block .timeline-content{
+    width: 80%;
+    float: right;
+    font-size: 0.7em;
+  }
+  .timeline-block .timeline-icon {
+    left: 7.5%;
+    width: 2em;
+    height: 8%;
+    font-size: 70%;
+  }
 }

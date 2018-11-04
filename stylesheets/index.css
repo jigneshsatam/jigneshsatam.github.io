@@ -45,8 +45,3 @@ section[id]::before{
     flex-direction: column;
   }
 }
-
-.content.row{
-  height: 250%;
-  border: 1px dotted #ccc;
-}

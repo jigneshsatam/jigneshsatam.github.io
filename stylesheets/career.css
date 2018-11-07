@@ -82,17 +82,33 @@
   align-items: center;
   position: absolute;
   width: 2.5rem;
+  margin-left: -1.25em;
   height: 2.5rem;
   left: 50%;
-  margin-left: -1.4%;
   border-radius: 50%;
   background-color: #999;
   color: white;
   font-size: 100%;
 }
 @media screen and (max-width: 767px) {
+  #timeline{
+    padding: 4%;
+    width: 88%;
+    margin: 0 auto;
+    position: relative;
+  }
   #timeline::before{
-    left: 8.7%;
+    /*left: 8.7%;
+    left: 180px;*/
+    top: 0;
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 0.4em;
+  }
+  #timeline .timeline-block{
+    position: relative;
   }
   .timeline-block .timeline-content .timeline-designation{
     position: unset;
@@ -103,9 +119,10 @@
     font-size: 0.7em;
   }
   .timeline-block .timeline-icon {
-    left: 7.5%;
+    left: 0;
     width: 2em;
-    height: 8%;
-    font-size: 70%;
+    margin-left: -0.9em;
+    border: 0.1em solid #e7eaec;
+    height: 2em;
   }
 }

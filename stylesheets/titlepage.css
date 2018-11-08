@@ -1,5 +1,5 @@
 .bg-img {
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   /* The image used */
   background-image: url("./../images/intro4.jpg");
   /* Full height */
@@ -49,6 +49,7 @@
   .bg-img {
     height: 100%;
     background-position: right;
+    width: auto;
   }
   .intro.row {
     width: inherit;

@@ -35,6 +35,7 @@ body {
 section[id]::before{
   display: block;
   visibility: hidden;
+  width: 100%;
   height: 5%;
   content: "";
 }

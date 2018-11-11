@@ -1,0 +1,76 @@
+#skills .skills.row{
+  justify-content: space-around;
+  margin-bottom: 5%;
+  /*height: 25%;*/
+}
+#skills .skills.row .ribbon{
+  width: 40%;
+  /*height: 40%;*/
+  /*border: solid 3px black;*/
+  border-radius: 2%;
+  background-color: white;
+  /*padding: 2%;*/
+  position: relative;
+}
+#skills .ribbon .heading {
+  position: absolute;
+  background-color: #e6e6e6;
+  margin-top: 0;
+  width: 90%;
+  left: -0.4em;
+  top: 0.5em;
+  text-align: center;
+  color: #676a6c;
+}
+#skills .ribbon .heading::before{
+  content: "";
+  position: absolute;
+  top: 1.16em;
+  border-left: solid 0.2em transparent;
+  border-right: solid .2em #999;
+  border-top: solid .2em #999;
+  border-bottom: solid 0.2em transparent;
+  display: block;
+}
+#skills .ribbon .heading::after{
+  content: "";
+  position: absolute;
+  right: 0;
+  border-left: solid 0.6em transparent;
+  border-right: solid 0.6em white;
+  border-top: solid 0.6em transparent;
+  border-bottom: solid 0.6em transparent;
+}
+
+#skills .ribbon .content.row{
+  box-sizing: border-box;
+  justify-content: space-evenly;
+  padding: 10% 5% 5%;
+  color: #aeaeae;
+}
+
+#skills .content .skill{
+  border: solid 1px #333;
+  border-radius: 40%;
+  padding: 2% 6%;
+}
+
+@media screen and (max-width: 767px) {
+  #skills .row{
+    align-items: center;
+    margin-bottom: 0;
+  }
+  #skills .skills.row .ribbon{
+    width: 90%;
+    margin-bottom: 5%;
+  }
+  #skills .skills.row .ribbon .heading{
+    top: 0.2em;
+  }
+  #skills .skills.row .ribbon .content{
+    padding-top: 15%;
+  }
+  #skills .skills.row .ribbon .content .skill{
+    margin-bottom: 2%;
+  }
+}

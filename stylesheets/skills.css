@@ -45,18 +45,20 @@
 #skills .ribbon .content.row{
   box-sizing: border-box;
   justify-content: space-evenly;
-  padding: 10% 5% 5%;
+  padding: 3em 5% 5%;
   color: #aeaeae;
 }
 
 #skills .content .skill{
   border: solid 1px #333;
-  border-radius: 40%;
+  border-radius: 30px;
   padding: 2% 6%;
+  margin: 1%;
+  text-align: center;
 }
 
 @media screen and (max-width: 767px) {
-  #skills .row{
+  #skills .skills.row{
     align-items: center;
     margin-bottom: 0;
   }
@@ -64,13 +66,11 @@
     width: 90%;
     margin-bottom: 5%;
   }
-  #skills .skills.row .ribbon .heading{
-    top: 0.2em;
-  }
   #skills .skills.row .ribbon .content{
     padding-top: 15%;
   }
   #skills .skills.row .ribbon .content .skill{
     margin-bottom: 2%;
+    min-width: 60%;
   }
 }

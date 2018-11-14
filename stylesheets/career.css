@@ -6,16 +6,17 @@
   padding-top: 4%;
 }*/
 #timeline{
-  padding: 0 5%;
-  height: 100%;
+  width: 88%;
+  margin: 0 auto;
+  position: relative;
 }
 #timeline::before{
   content: '';
   background: #e7eaec;
-  width: 0.3%;
-  height: 150%;
+  width: 0.4em;
+  height: 100%;
+  left: unset;
   position: absolute;
-  left: 50%;
 }
 #timeline::after{
   clear: both;
@@ -36,18 +37,20 @@
   background-color: white;
   border-radius: 0.5em;
   padding: 2%;
-  width: 40%;
+  width: 80%;
+  float: right;
+  font-size: 0.9em;
 }
 .timeline-block .timeline-content p{
   color: #aeaeae;
 }
 .timeline-block .timeline-content .timeline-designation{
-  position: absolute;
+  position: unset;
   top: 2%;
   width: 100%;
   left: 126%;
 }
-.timeline-block .timeline-content .timeline-designation small {
+.timeline-block .timeline-content .timeline-designation small{
   font-size: 85%;
   font-weight: 600;
 }
@@ -90,10 +93,10 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  width: 2.5rem;
-  margin-left: -1.25em;
-  height: 2.5rem;
-  left: 50%;
+  width: 2rem;
+  margin-left: -0.9em;
+  height: 2rem;
+  left: 0;
   border-radius: 50%;
   background-color: #999;
   color: white;
@@ -101,32 +104,36 @@
   /*border: 0.1em solid #e7eaec;*/
   border: 0.1em solid #666;
 }
-@media screen and (max-width: 767px) {
+#timeline .timeline-block{
+  position: relative;
+}
+
+/* Laptop/Compuer Screen and Big Tablet Screen */
+@media screen and (orientation: landscape) and (min-width: 1280px), screen and (orientation: portrait) and (min-width: 1024px){
   #timeline{
-    width: 88%;
-    margin: 0 auto;
-    position: relative;
+    padding: 0 5%;
+    height: 100%;
   }
   #timeline::before{
-    left: unset;
-    height: 100%;
-    width: 0.4em;
+    left: 50%;
+    height: 150%;
+    width: 0.3%;
   }
   #timeline .timeline-block{
-    position: relative;
-  }
-  .timeline-block .timeline-content .timeline-designation{
     position: unset;
   }
-  .timeline-block .timeline-content{
-    width: 80%;
-    float: right;
-    font-size: 0.9em;
+  .timeline-block .timeline-content .timeline-designation{
+    position: absolute;
   }
-  .timeline-block .timeline-icon {
-    left: 0;
-    width: 2em;
-    margin-left: -0.9em;
-    height: 2em;
+  .timeline-block .timeline-content{
+    width: 40%;
+    float: unset;
+    font-size: unset;
+  }
+  .timeline-block .timeline-icon{
+    left: 50%;
+    width: 2.5rem;
+    margin-left: -1.25em;
+    height: 2.5rem;
   }
 }

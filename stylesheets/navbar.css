@@ -1,11 +1,14 @@
-#navbar.row{
-  height: 10%;
-  /*height: 5.8em;*/
+#navbar.row {
   transition: 0.2s;
-  align-items: center;
   background-color: #000;
   background-color: #c6c6c6;
-  position: absolute;
+
+  height: unset;
+  align-items: unset;
+  /*background-color: inherit;*/
+  color: inherit;
+  position: fixed;
+  top: 0;
 }
 #navbar.row.sticky{
   background-color: #999;
@@ -21,65 +24,61 @@
 }*/
 #navbar a {
   padding: 1em;
-  text-align: center;
+  text-align: unset;
   text-decoration-line: none;
 }
 #navbar.row a:hover {
   /*background-color: #999;*/
-  color: #4a86e8
+  color: #4a86e8;
 }
 #navbar.row.sticky a:hover {
   /*background-color: #c6c6c6;*/
   color: #4a86e8;
 }
 #fill-navbar{
-  /*display: none;*/
-  height: 10%;
-  width: 100%;
-  content: "";
-}
-#open-nav{
   display: none;
 }
-/*@media screen and (max-width: 600px), (orientation: landscape) and (max-width: 823px) {*/
-@media screen and (max-width: 767px) {
+#open-nav{
+  display: unset;
+}
+#navbar > a:not(:first-child) {
+  display: none;
+}
+#navbar.row.show {
+  background-color: #f5f5f5;
+}
+#navbar.show a{
+  color: #666;
+  display: flex;
+}
+#about-div {
+  display: flex;
+  justify-content: space-between;
+  /*width: fit-content;*/
+}
+
+/* Laptop/Compuer Screen and Big Tablet Screen */
+@media screen and (orientation: landscape) and (min-width: 1280px), screen and (orientation: portrait) and (min-width: 1024px) {
   #navbar.row {
-    height: unset;
-    align-items: unset;
-    /*background-color: inherit;*/
-    color: inherit;
-    position: fixed;
-    top: 0;
+    height: 10%;
+    /*height: 5.8em;*/
+    align-items: center;
+    position: absolute;
+    top: unset;
   }
   #navbar a {
-    text-align: unset;
-  }
-  #navbar.row a:hover {
-    /*background-color: #c6c6c6;*/
-    color: #4a86e8;
-  }
-  /*#navbar.row.sticky{
-    background-color: inherit;
-  }*/
-  #fill-navbar{
-    display: none;
-  }
-  #open-nav{
-    display: unset;
+    text-align: center;
   }
   #navbar > a:not(:first-child) {
+    display: unset;
+  }
+  #fill-navbar{
+    /*display: none;*/
+    height: 10%;
+    width: 100%;
+    content: "";
+  }
+  #open-nav{
     display: none;
-  }
-  #navbar.row.show {
-    background-color: #f5f5f5;
-  }
-  #navbar.show a{
-    color: #666;
-    display: flex;
-  }
-  #about-div {
-    display: flex;
-    justify-content: space-between;
-    /*width: fit-content;*/
   }
 }

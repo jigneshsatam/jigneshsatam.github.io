@@ -116,7 +116,6 @@
   }
   #timeline::before{
     left: 50%;
-    height: 150%;
     width: 0.3%;
   }
   #timeline .timeline-block{

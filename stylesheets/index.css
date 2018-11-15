@@ -39,7 +39,7 @@ section[id]::before{
   visibility: hidden;*/
   display: block;
   content: "";
-  padding-top: 12%;
+  padding-top: 10%;
   /*padding-top: 3.5em;*/
 }
 section .subtitle{
@@ -52,15 +52,22 @@ section .subtitle{
 }
 
 /* Laptop/Compuer Screen and Big Tablet Screen */
-@media screen and (orientation: landscape) and (min-width: 1280px), screen and (orientation: portrait) and (min-width: 1024px) {
+@media screen and (orientation: landscape) and (min-width: 1280px), screen and (orientation: portrait) and (min-width: 1024px){
   section[id]::before{
-    padding-top: 4%;
+    padding-top: 5%;
   }
   .row {
     flex-direction: row;
   }
 
-  .computer {
+  /*.computer {
     display: block;
+  }*/
+}
+
+/* Big Tablet Screen */
+@media screen and (orientation: portrait) and (min-width: 1024px) {
+  section[id]::before{
+    padding-top: 12%;
   }
 }

@@ -1,7 +1,26 @@
 /*Color pallet*/
 /*https://coolors.co/bfbfbf-f9f9f9-595959-2f2f2f-0b0b0b*/
 /*https://coolors.co/bfbfbf-f9f9f9-4a86e8-595959-2f2f2f*/
+/*https://coolors.co/a9e8e7-efab44-ec5e24-3bb699-473a24*/
+/*https://coolors.co/011627-fdfffc-2ec4b6-e71d36-ff9f1c*/
+
+/*https://coolors.co/ff420e-aebd38-4a86e8-ffbb00-bcbabe*/
+
+/*https://coolors.co/ff7d0c-aebd38-4a86e8-ffbb00-bcbabe*/
 /*Generic*/
+.bg-light_grey{
+  /*background-color: #c6c6c6;*/
+  background-color: #ff7d0c !important;
+}
+.bg-orange{
+  background-color: #ff7d0c !important;
+}
+.bg-yellow{
+  background-color: #ffbb00 !important;
+}
+.bg-green{
+  background-color: #aebd38 !important;
+}
 html, body {
   height: 100%;
   scroll-behavior: smooth;

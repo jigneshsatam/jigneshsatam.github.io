@@ -1,6 +1,6 @@
 #navbar.row {
   transition: 0.2s;
-  background-color: #000;
+  /*background-color: #000;*/
   background-color: #c6c6c6;
 
   height: unset;
@@ -30,10 +30,18 @@
 #navbar.row a:hover {
   /*background-color: #999;*/
   color: #4a86e8;
+
+  /*color: #ffbb00;*/
+  /*color: #aebd38;*/
+  /*color: #ff7d0c;*/
 }
 #navbar.row.sticky a:hover {
   /*background-color: #c6c6c6;*/
   color: #4a86e8;
+
+  /*color: #ffbb00;*/
+  /*color: #aebd38;*/
+  /*color: #ff7d0c;*/
 }
 #fill-navbar{
   display: none;

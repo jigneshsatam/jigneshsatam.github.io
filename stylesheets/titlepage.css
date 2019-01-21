@@ -13,6 +13,9 @@
   color: white;
   width: auto;
 }
+.colour-on.bg-img{
+  background-image: url("./../images/intro5.jpg") !important;
+}
 .intro.row{
   flex-direction: column;
   width: inherit;

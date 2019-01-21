@@ -15,13 +15,13 @@
   /*background-color: #c6c6c6;*/
   background-color: #ff7d0c !important;
 }
-.bg-orange{
+.colour-on.bg-orange{
   background-color: #ff7d0c !important;
 }
-.bg-yellow{
+.colour-on.bg-yellow{
   background-color: #ffbb00 !important;
 }
-.bg-green{
+.colour-on.bg-green{
   background-color: #aebd38 !important;
 }
 html, body {

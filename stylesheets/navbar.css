@@ -1,7 +1,7 @@
 #navbar.row {
   transition: 0.2s;
   /*background-color: #000;*/
-  /*background-color: #c6c6c6;*/
+  background-color: #c6c6c6;
 
   height: unset;
   align-items: unset;

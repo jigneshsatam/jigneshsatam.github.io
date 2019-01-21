@@ -1,4 +1,4 @@
-var colour;
+var colour = false;
 function toggleColour(){
   if (colour === undefined || colour === true){
     colourOff();
@@ -26,3 +26,4 @@ function addClass(elem, klass){
 function removeClass(elem, klass){
   elem.classList.remove(klass);
 }
+window.setInterval(function(){toggleColour()}, 5000);

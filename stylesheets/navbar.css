@@ -1,7 +1,7 @@
 #navbar.row {
   transition: 0.2s;
   /*background-color: #000;*/
-  background-color: #c6c6c6;
+  /* background-color: #c6c6c6; */
 
   height: unset;
   align-items: unset;
@@ -9,9 +9,10 @@
   color: inherit;
   position: fixed;
   top: 0;
+  background-color: var(--primary-color);
 }
 #navbar.row.sticky{
-  background-color: #999;
+  background-color: var(--secondary-color);
   position: fixed;
   top: 0;
   z-index: 3;
@@ -29,7 +30,8 @@
 }
 #navbar.row a:hover {
   /*background-color: #999;*/
-  color: #4a86e8;
+  color: var(--secondary-color);
+  /* color: #4a86e8; */
 
   /*color: #ffbb00;*/
   /*color: #aebd38;*/
@@ -37,7 +39,8 @@
 }
 #navbar.row.sticky a:hover {
   /*background-color: #c6c6c6;*/
-  color: #4a86e8;
+  color: var(--primary-color);
+  /* color: #4a86e8; */
 
   /*color: #ffbb00;*/
   /*color: #aebd38;*/

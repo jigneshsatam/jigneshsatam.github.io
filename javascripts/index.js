@@ -26,4 +26,4 @@ function addClass(elem, klass){
 function removeClass(elem, klass){
   elem.classList.remove(klass);
 }
-window.setInterval(function(){toggleColour()}, 5000);
+// window.setInterval(function(){toggleColour()}, 5000);

@@ -23,11 +23,15 @@
   align-items: center;
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0, 0.7); /* Black w/opacity/see-through */
+  background-color: var(--secondary-color-transperent);
   text-align: center;
 }
 #name {
   font-size: 2em;
   margin: 0.8em 0;
+}
+#name .name{
+  color: var(--primary-color);
 }
 #prof {
   font-size: 1.3em;

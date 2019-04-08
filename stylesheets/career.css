@@ -12,7 +12,7 @@
 }
 #timeline::before{
   content: '';
-  background-color: var(--mild-dark-gray);
+  background-color: var(--primary-color-very-transperent);
   width: 0.4em;
   height: 100%;
   left: unset;
@@ -104,7 +104,7 @@
   color: white;
   font-size: 100%;
   /*border: 0.1em solid #e7eaec;*/
-  border: 0.1em solid #666;
+  border: 0.1em solid var(--charcoal-black);
 }
 #timeline .timeline-block{
   position: relative;

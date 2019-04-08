@@ -56,7 +56,6 @@
   --dark-blue:  #308ad8;
 
   --dark-gray: #aeaeae;
-  --mild-dark-gray: #e7eaec;
   --gray:  #ececec;
   --light-gray: #f4f4f4;
 
@@ -64,6 +63,7 @@
 
   --primary-color: #4a86e8;
   --primary-color-transperent: #4a86e8e2;
+  --primary-color-very-transperent: #4a86e82f;
   /* --secondary-color: #003da2; */
   --secondary-color: #375EAB;
   --secondary-color-transperent: #375EABf0;

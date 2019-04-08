@@ -30,8 +30,8 @@
   position: absolute;
   top: 1.16em;
   border-left: solid 0.2em transparent;
-  border-right: solid .2em #999;
-  border-top: solid .2em #999;
+  border-right: solid .2em var(--charcoal-black);
+  border-top: solid .25em var(--charcoal-black);
   border-bottom: solid 0.2em transparent;
   display: block;
 }
@@ -49,11 +49,11 @@
   box-sizing: border-box;
   justify-content: space-evenly;
   padding-top: 15%;
-  color: #aeaeae;
+  color: var(--charcoal-black);
 }
 
 #skills .skills.row .ribbon .content .skill{
-  border: solid 1px #333;
+  border: solid 1px var(--charcoal-black);
   border-radius: 30px;
   padding: 2% 6%;
   margin: 1%;

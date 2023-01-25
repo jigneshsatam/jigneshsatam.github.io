@@ -52,16 +52,16 @@ function readTextFile(file) {
 
 
 const timeLine = document.getElementById('timeline');
-// timeLine.onload = loadTimeLine();
+timeLine.onload = loadTimeLine();
 // timeLine.onload = readTextFile("data/timeline.json");
-timeLine.onload = fetch('/data/timeline.json')
-  .then(response => response.json())
-  .then(timeLineEvents => {
-    console.log(timeLineEvents);
-    timeLineEvents.forEach(timeLineEvent => {
-      createTimeLine(timeLineEvent);
-    });
-  });
+// timeLine.onload = fetch('/data/timeline.json')
+//   .then(response => response.json())
+//   .then(timeLineEvents => {
+//     console.log(timeLineEvents);
+//     timeLineEvents.forEach(timeLineEvent => {
+//       createTimeLine(timeLineEvent);
+//     });
+//   });
 
 function loadTimeLine() {
   data.timeLineEvents.forEach(timeLineEvent => {

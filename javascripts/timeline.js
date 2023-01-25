@@ -13,33 +13,33 @@ var data = {
 }
 
 
-function readTextFile(file) {
-  var rawFile = new XMLHttpRequest();
-  rawFile.open("GET", file, false);
-  rawFile.onreadystatechange = function () {
-    if (rawFile.readyState === 4) {
-      if (rawFile.status === 200 || rawFile.status == 0) {
-        var allText = rawFile.responseText;
-        // alert(allText);
-        console.log(allText)
-      }
-    }
-  }
-  rawFile.send(null);
-}
+// function readTextFile(file) {
+//   var rawFile = new XMLHttpRequest();
+//   rawFile.open("GET", file, false);
+//   rawFile.onreadystatechange = function () {
+//     if (rawFile.readyState === 4) {
+//       if (rawFile.status === 200 || rawFile.status == 0) {
+//         var allText = rawFile.responseText;
+//         // alert(allText);
+//         console.log(allText)
+//       }
+//     }
+//   }
+//   rawFile.send(null);
+// }
 
 
 const timeLine = document.getElementById('timeline');
-timeLine.onload = loadTimeLine();
+// timeLine.onload = loadTimeLine();
 // timeLine.onload = readTextFile("data/timeline.json");
-// timeLine.onload = fetch('/data/timeline.json')
-//   .then(response => response.json())
-//   .then(timeLineEvents => {
-//     console.log(timeLineEvents);
-//     timeLineEvents.forEach(timeLineEvent => {
-//       createTimeLine(timeLineEvent);
-//     });
-//   });
+timeLine.onload = fetch('/data/timeline.json')
+  .then(response => response.json())
+  .then(timeLineEvents => {
+    console.log(timeLineEvents);
+    timeLineEvents.forEach(timeLineEvent => {
+      createTimeLine(timeLineEvent);
+    });
+  });
 
 function loadTimeLine() {
   data.timeLineEvents.forEach(timeLineEvent => {

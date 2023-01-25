@@ -1,25 +1,3 @@
-{/* <div class="timeline-block">
-  <div class="timeline-icon colour-off bg-yellow">
-    <i class="fa fa-tv"></i>
-  </div>
-  <div class="timeline-content">
-    <h2> Disney - Star TV </h2>
-    <p>
-      In Disney I developed Monetization Intelligence (MINT) platform which helps to solve advertisement slots allocation problem for sales team of StarTV.
-    </p>
-    <p>
-      To handle their immense data, implemented Data Lake Connector and Aggregator which amalgamates data from various data lake sources and diverge to different systems.
-    </p>
-    <span class="timeline-designation">
-      April 2018 - Present
-      <br>
-        <small>
-          Senior Full Stack Developer
-        </small>
-    </span>
-  </div>
-</div> */}
-
 var data = {
   "timeLineEvents": [
     {

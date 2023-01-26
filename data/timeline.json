@@ -1,0 +1,32 @@
+{
+  "timeLineEvents": [
+    {
+      "Name": "Disney - Star TV",
+      "Descriptions": [
+        "In Disney I developed Monetization Intelligence (MINT) platform which helps to solve advertisement slots allocation problem for sales team of StarTV.",
+        "To handle their immense data, implemented Data Lake Connector and Aggregator which amalgamates data from various data lake sources and diverge to different systems."
+      ],
+      "Period": "April 2018 - Present",
+      "Designation": "Senior Full Stack Developer",
+      "Icon": "fa-tv"
+    },
+    {
+      "Name": "IDfy",
+      "Descriptions": [
+        "Now I am in Nextcode and develop website with Python code for genetic analysis. Now I am in Nextcode and develop website with Python code for genetic analysis. Now I am in Nextcode and develop website with Python code for genetic analysis. Now I am in Nextcode and develop website with Python code for genetic analysis. Now I am in Nextcode and develop website with Python code for genetic analysis."
+      ],
+      "Period": "July 2015 - April 2018",
+      "Designation": "Full Stack Developer",
+      "Icon": "fa-search"
+    },
+    {
+      "Name": "Kiprosh",
+      "Descriptions": [
+        "Now I am in Nextcode and develop website with Python code for genetic analysis. Now I am in Nextcode and develop website with Python code for genetic analysis. Now I am in Nextcode and develop website with Python code for genetic analysis. Now I am in Nextcode and develop website with Python code for genetic analysis. Now I am in Nextcode and develop website with Python code for genetic analysis."
+      ],
+      "Period": "June 2014 - July 2015",
+      "Designation": "Full Stack Developer",
+      "Icon": "fa-code"
+    }
+  ]
+}

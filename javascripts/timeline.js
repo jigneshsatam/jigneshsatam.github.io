@@ -34,9 +34,9 @@ const timeLine = document.getElementById('timeline');
 // timeLine.onload = readTextFile("data/timeline.json");
 timeLine.onload = fetch('/data/timeline.json')
   .then(response => response.json())
-  .then(timeLineEvents => {
-    console.log(timeLineEvents);
-    timeLineEvents.forEach(timeLineEvent => {
+  .then(jsonResponse => {
+    console.log(jsonResponse.timeLineEvents);
+    jsonResponse.timeLineEvents.forEach(timeLineEvent => {
       createTimeLine(timeLineEvent);
     });
   });

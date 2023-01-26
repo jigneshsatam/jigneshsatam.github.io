@@ -99,6 +99,7 @@ body {
   height: 100%;
   scroll-behavior: smooth;
   background-color: var(--light-gray);
+  font-size: 2vmin;
 }
 
 body {

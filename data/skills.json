@@ -1,0 +1,74 @@
+{
+  "skillLineItems": [
+    [
+      {
+        "SkillType": "Programming Languages",
+        "SkillNames": [
+          "Golang",
+          "Ruby",
+          "Java",
+          "JavaScript",
+          "Python"
+        ]
+      },
+      {
+        "SkillType": "Frameworks",
+        "SkillNames": [
+          "Ruby on Rails",
+          "Python Django",
+          "Angular - 5",
+          "ReactJs",
+          "Android"
+        ]
+      }
+    ],
+    [
+      {
+        "SkillType": "Server-side Technologies",
+        "SkillNames": [
+          "PostgreSQL",
+          "RabbitMQ",
+          "Redis",
+          "MySQL",
+          "SQLite"
+        ]
+      },
+      {
+        "SkillType": "Client-side Technologies",
+        "SkillNames": [
+          "HTML",
+          "CSS",
+          "JQuery",
+          "Bootstrap",
+          "Semantic UI",
+          "SCSS"
+        ]
+      }
+    ],
+    [
+      {
+        "SkillType": "Hosting",
+        "SkillNames": [
+          "Amazon Web Services - AWS",
+          "Google Cloud Platform - GCP",
+          "Heroku"
+        ]
+      },
+      {
+        "SkillType": "Testing Frameworks",
+        "SkillNames": [
+          "RSpec",
+          "Mocha-Chai"
+        ]
+      }
+    ],
+    [
+      {
+        "SkillType": "Version Control Tools",
+        "SkillNames": [
+          "Git"
+        ]
+      }
+    ]
+  ]
+}

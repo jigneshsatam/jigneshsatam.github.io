@@ -3,7 +3,7 @@ skills.onload = fetch('/data/skills.json')
   .then(response => response.json())
   .then(jsonResponse => {
     jsonResponse.skillLineItems.forEach(skillLineItem => {
-      createTimeLine(skillLineItem);
+      createSkills(skillLineItem);
     });
   });
 

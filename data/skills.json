@@ -29,8 +29,8 @@
           "PostgreSQL",
           "RabbitMQ",
           "Redis",
-          "MySQL",
-          "SQLite"
+          "BigQuery",
+          "MySQL"
         ]
       },
       {
@@ -55,14 +55,21 @@
         ]
       },
       {
+        "SkillType": "Containerization & Orchestration",
+        "SkillNames": [
+          "Docker",
+          "Kubernetes"
+        ]
+      }
+    ],
+    [
+      {
         "SkillType": "Testing Frameworks",
         "SkillNames": [
           "RSpec",
           "Mocha-Chai"
         ]
-      }
-    ],
-    [
+      },
       {
         "SkillType": "Version Control Tools",
         "SkillNames": [

@@ -58,6 +58,7 @@
   color: var(--charcoal-black);
   flex-direction: row;
   align-items: center;
+  font-size: 1em;
 }
 
 #skills .skills.row .ribbon .content .skill {
@@ -93,5 +94,6 @@
 @media screen and (min-width: 1919px) {
   #skills .skills.row .ribbon {
     min-height: 16em;
+    /* font-size: 1; */
   }
 }

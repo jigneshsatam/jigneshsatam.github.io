@@ -54,8 +54,10 @@
 #skills .skills.row .ribbon .content.row {
   box-sizing: border-box;
   justify-content: space-evenly;
-  padding-top: 15%;
+  padding-top: 13%;
   color: var(--charcoal-black);
+  flex-direction: row;
+  align-items: center;
 }
 
 #skills .skills.row .ribbon .content .skill {
@@ -65,66 +67,11 @@
   margin: 1%;
   text-align: center;
   margin-bottom: 2%;
-  min-width: 60%;
+  /* min-width: 60%; */
 }
 
-@media screen and (orientation: landscape) and (min-width: 600px),
-screen and (orientation: portrait) and (min-width: 600px) {
-
-  #skills .skills.row {
-    justify-content: space-evenly;
-    flex-direction: row;
-  }
-
-  #skills .skills.row .ribbon {
-    width: 48%;
-  }
-
-  #skills .skills.row .ribbon .heading {
-    font-size: initial;
-  }
-
+@media screen and (orientation: landscape) {
   #skills .skills.row .ribbon .content.row {
-    flex-direction: row;
-    padding: 3em 5% 5%;
-    min-height: 140px;
-    align-items: center;
-  }
-
-  #skills .skills.row .ribbon .content.row .skill {
-    margin-bottom: unset;
-    min-width: unset;
-    white-space: nowrap;
-  }
-}
-
-@media screen and (orientation: landscape) and (min-width: 1280px),
-screen and (orientation: portrait) and (min-width: 1024px) {
-
-  /* #skills .ribbon .heading {
-    font-size: 3vmin;
-    width: 100%;
-  } */
-
-  #skills .skills.row {
-    justify-content: space-evenly;
-    margin-bottom: 5%;
-  }
-
-  #skills .skills.row .ribbon {
-    width: 40%;
-    margin-bottom: unset;
-  }
-
-  #skills .skills.row .ribbon .content.row {
-    /* padding: 3em 5% 5%; */
-    /* min-height: 160px; */
-    align-items: center;
-  }
-
-  #skills .skills.row .ribbon .content.row .skill {
-    margin-bottom: unset;
-    min-width: unset;
-    white-space: nowrap;
+    padding-top: 8%;
   }
 }

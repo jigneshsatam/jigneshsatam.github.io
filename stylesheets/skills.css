@@ -67,6 +67,22 @@
   min-width: 60%;
 }
 
+@media screen and (orientation: landscape) and (min-width: 600px),
+screen and (orientation: portrait) and (min-width: 600px) {
+  #skills .ribbon .heading {
+    font-size: 2.37vmin;
+  }
+
+  #skills .skills.row {
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  #skills .skills.row .ribbon {
+    width: 40%;
+  }
+}
+
 @media screen and (orientation: landscape) and (min-width: 1280px),
 screen and (orientation: portrait) and (min-width: 1024px) {
 

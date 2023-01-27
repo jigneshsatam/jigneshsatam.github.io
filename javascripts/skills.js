@@ -43,37 +43,78 @@ function createSkills(skillLineItem) {
 //     [
 //       {
 //         "SkillType": "Programming Languages",
-//         "SkillNames": ["Golang", "Ruby", "Java", "JavaScript", "Python"]
+//         "SkillNames": [
+//           "Golang",
+//           "Ruby",
+//           "Java",
+//           "JavaScript",
+//           "Python"
+//         ]
 //       },
 //       {
 //         "SkillType": "Frameworks",
-//         "SkillNames": ["Ruby on Rails", "Python Django", "Angular - 5", "ReactJs", "Android"]
+//         "SkillNames": [
+//           "Ruby on Rails",
+//           "Python Django",
+//           "Angular - 5",
+//           "ReactJs",
+//           "Android"
+//         ]
 //       }
 //     ],
 //     [
 //       {
 //         "SkillType": "Server-side Technologies",
-//         "SkillNames": ["PostgreSQL", "RabbitMQ", "Redis", "MySQL", "SQLite"]
+//         "SkillNames": [
+//           "PostgreSQL",
+//           "RabbitMQ",
+//           "Redis",
+//           "BigQuery",
+//           "MySQL"
+//         ]
 //       },
 //       {
 //         "SkillType": "Client-side Technologies",
-//         "SkillNames": ["HTML", "CSS", "JQuery", "Bootstrap", "Semantic UI", "SCSS"]
+//         "SkillNames": [
+//           "HTML",
+//           "CSS",
+//           "JQuery",
+//           "Bootstrap",
+//           "Semantic UI",
+//           "SCSS"
+//         ]
 //       }
 //     ],
 //     [
 //       {
 //         "SkillType": "Hosting",
-//         "SkillNames": ["Amazon Web Services - AWS", "Google Cloud Platform - GCP", "Heroku"]
+//         "SkillNames": [
+//           "Amazon Web Services - AWS",
+//           "Google Cloud Platform - GCP",
+//           "Heroku"
+//         ]
 //       },
 //       {
-//         "SkillType": "Testing Frameworks",
-//         "SkillNames": ["RSpec", "Mocha-Chai"]
+//         "SkillType": "Containerization & Orchestration",
+//         "SkillNames": [
+//           "Docker",
+//           "Kubernetes"
+//         ]
 //       }
 //     ],
 //     [
 //       {
+//         "SkillType": "Testing Frameworks",
+//         "SkillNames": [
+//           "RSpec",
+//           "Mocha-Chai"
+//         ]
+//       },
+//       {
 //         "SkillType": "Version Control Tools",
-//         "SkillNames": ["Git"]
+//         "SkillNames": [
+//           "Git"
+//         ]
 //       }
 //     ]
 //   ]

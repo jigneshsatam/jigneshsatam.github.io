@@ -32,13 +32,6 @@ function createTimeLine(timeLineEvent) {
   h2.innerHTML = ` ${timeLineEvent.Name} `;
   timeline_content.appendChild(h2)
 
-  // Descriptions
-  timeLineEvent.Descriptions.forEach(element => {
-    const p = document.createElement('p');
-    p.innerHTML = `${element}`;
-    timeline_content.appendChild(p)
-  });
-
   // Designation
   const timeline_designation = document.createElement('span');
   timeline_designation.classList.add("timeline-designation");
@@ -52,6 +45,14 @@ function createTimeLine(timeLineEvent) {
   timeline_designation.appendChild(small);
 
   timeline_content.appendChild(timeline_designation);
+
+
+  // Descriptions
+  timeLineEvent.Descriptions.forEach(element => {
+    const p = document.createElement('p');
+    p.innerHTML = `${element}`;
+    timeline_content.appendChild(p)
+  });
 
 
   timeline_block.appendChild(timeline_icon);

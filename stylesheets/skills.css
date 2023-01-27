@@ -13,23 +13,24 @@
   /*padding: 2%;*/
   position: relative;
   margin-bottom: 5%;
+  font-size: 0.7em;
 }
 
-#skills .ribbon .heading {
+#skills .skills.row .ribbon .heading {
   position: absolute;
   background-color: var(--primary-color-transperent);
   /* background-color: #e6e6e6; */
   margin-top: 0;
-  width: 90%;
+  width: 100%;
   left: -0.4em;
   top: 0.5em;
   text-align: center;
   color: white;
   /* color: #676a6c; */
-  font-size: 3.5vmin;
+  white-space: nowrap;
 }
 
-#skills .ribbon .heading::before {
+#skills .skills.row .ribbon .heading::before {
   content: "";
   position: absolute;
   top: 1.16em;
@@ -40,7 +41,7 @@
   display: block;
 }
 
-#skills .ribbon .heading::after {
+#skills .skills.row .ribbon .heading::after {
   content: "";
   position: absolute;
   right: 0;
@@ -69,29 +70,44 @@
 
 @media screen and (orientation: landscape) and (min-width: 600px),
 screen and (orientation: portrait) and (min-width: 600px) {
-  #skills .ribbon .heading {
-    font-size: 2.37vmin;
-  }
 
   #skills .skills.row {
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-direction: row;
   }
 
   #skills .skills.row .ribbon {
-    width: 40%;
+    width: 48%;
+  }
+
+  #skills .skills.row .ribbon .heading {
+    font-size: initial;
+  }
+
+  #skills .skills.row .ribbon .content.row {
+    flex-direction: row;
+    padding: 3em 5% 5%;
+    min-height: 140px;
+    align-items: center;
+  }
+
+  #skills .skills.row .ribbon .content.row .skill {
+    margin-bottom: unset;
+    min-width: unset;
+    white-space: nowrap;
   }
 }
 
 @media screen and (orientation: landscape) and (min-width: 1280px),
 screen and (orientation: portrait) and (min-width: 1024px) {
 
-  #skills .ribbon .heading {
+  /* #skills .ribbon .heading {
     font-size: 3vmin;
-  }
+    width: 100%;
+  } */
 
   #skills .skills.row {
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-bottom: 5%;
   }
 
@@ -101,8 +117,8 @@ screen and (orientation: portrait) and (min-width: 1024px) {
   }
 
   #skills .skills.row .ribbon .content.row {
-    padding: 3em 5% 5%;
-    min-height: 160px;
+    /* padding: 3em 5% 5%; */
+    /* min-height: 160px; */
     align-items: center;
   }
 

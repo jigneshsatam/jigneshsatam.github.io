@@ -11,15 +11,18 @@
   top: 0;
   background-color: var(--primary-color);
 }
-#navbar.row.sticky{
+
+#navbar.row.sticky {
   background-color: var(--secondary-color);
   position: fixed;
   top: 0;
   z-index: 3;
 }
+
 #navbar.row a {
   color: white;
 }
+
 /*#navbar.row.shrink{
   height: 10%;
 }*/
@@ -28,6 +31,7 @@
   text-align: unset;
   text-decoration-line: none;
 }
+
 #navbar.row a:hover {
   /*background-color: #999;*/
   color: var(--secondary-color);
@@ -37,6 +41,7 @@
   /*color: #aebd38;*/
   /*color: #ff7d0c;*/
 }
+
 #navbar.row.sticky a:hover {
   /*background-color: #c6c6c6;*/
   color: var(--primary-color);
@@ -46,22 +51,28 @@
   /*color: #aebd38;*/
   /*color: #ff7d0c;*/
 }
-#fill-navbar{
+
+#fill-navbar {
   display: none;
 }
-#open-nav{
+
+#open-nav {
   display: unset;
 }
-#navbar > a:not(:first-child) {
+
+#navbar>a:not(:first-child) {
   display: none;
 }
+
 #navbar.row.show {
   background-color: #f5f5f5;
 }
-#navbar.show a{
+
+#navbar.show a {
   color: #666;
   display: flex;
 }
+
 #about-div {
   display: flex;
   justify-content: space-between;
@@ -69,7 +80,8 @@
 }
 
 /* Laptop/Compuer Screen and Big Tablet Screen */
-@media screen and (orientation: landscape) and (min-width: 1280px), screen and (orientation: portrait) and (min-width: 1024px) {
+@media screen and (orientation: landscape) and (min-width: 1280px),
+screen and (orientation: portrait) and (min-width: 1024px) {
   #navbar.row {
     height: 10%;
     /*height: 5.8em;*/
@@ -77,19 +89,23 @@
     position: absolute;
     top: unset;
   }
+
   #navbar a {
     text-align: center;
   }
-  #navbar > a:not(:first-child) {
+
+  #navbar>a:not(:first-child) {
     display: unset;
   }
-  #fill-navbar{
+
+  #fill-navbar {
     /*display: none;*/
     height: 10%;
     width: 100%;
     content: "";
   }
-  #open-nav{
+
+  #open-nav {
     display: none;
   }
 }

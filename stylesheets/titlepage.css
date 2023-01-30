@@ -7,7 +7,10 @@
   /*height: 52.3em;*/
 
   /* Center and scale the image nicely */
-  background-position: center;
+  /* background-position: center; */
+  background-position: left top 3em;
+  background-position-x: 40%;
+
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -15,7 +18,6 @@
   color: white;
   width: auto;
 
-  background-attachment: fixed;
 }
 
 .colour-on.bg-img {
@@ -73,10 +75,10 @@
 /* Laptop/Compuer Screen and Big Tablet Screen */
 @media screen and (orientation: landscape) and (min-width: 1280px),
 screen and (orientation: portrait) and (min-width: 1024px) {
-  /* .bg-img {
+  .bg-img {
     height: 90%;
     background-position: center;
-  } */
+  }
 
   .intro.row {
     width: 40%;
